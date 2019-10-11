@@ -84,7 +84,10 @@ map<string, int> mp;
 3.  使用 `initializer_list` ：
 
 ```cpp
-map<string, int> mp = {{"Tom", 0}, {"Bob", "100"}, {"Alan", 100}};
+map<string, int> mp = {};
+mp.insert(pair<string,int>("Tom", 0));
+mp.insert(pair<string,int>("Bob", 100));
+mp.insert(pair<string,int>("Alan", 100));
 ```
 
 ### 查找、修改元素
